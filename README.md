@@ -1,2 +1,0 @@
-# ContadorDeCaracteres
-Created with CodeSandbox
