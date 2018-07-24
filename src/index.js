@@ -17,11 +17,11 @@ export default class App extends Component {
   // }
 
   handleType() {
-    const amount = findDOMNode.length;
+    const amount = findDOMNode.toString.length;
     console.log(amount);
     if (amount > 0) {
       this.state.digitado === amount;
-      //this.setState({ digitado });
+      this.setState({ digitado });
     }
   }
 
@@ -30,7 +30,7 @@ export default class App extends Component {
       <div className="App">
         <h1>Contador de Caracteres Digitados</h1>
         <h2>Entre com os dados</h2>
-        <textarea onInputCapture={this.handleType()} rows="8" cols="40" />
+        <textarea onInput={() => this.handleType()} rows="8" cols="40" />
         <p>Quantidade de Caracteres: {this.state.digitado}</p>
       </div>
     );
